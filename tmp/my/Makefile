@@ -8,7 +8,7 @@
 CC	=	gcc
 INC	=	include/
 DTESTS	=	tests/
-DSRC	=	./
+DSRC	=	src/
 DSTRING	=	$(DSRC)string/
 DPUT	=	$(DSRC)put/
 DENV	=	$(DSRC)env/
@@ -18,12 +18,10 @@ DFILE	=	$(DSRC)file/
 SRC	=	$(DPUT)my_putnbr_base.c		\
 		$(DSTRING)my_strip.c		\
 		$(DSTRING)count_endflags.c	\
-		$(DSTRING)my_ftoa.c		\
 		$(DSTRING)concat.c		\
 		$(DSTRING)get_next_to.c		\
 		$(DSTRING)get_before_to.c	\
 		$(DSTRING)get_next_word.c	\
-		$(DSTRING)is_char_in_str.c	\
 		$(DSTRING)count_words.c		\
 		$(DSTRING)my_itoa.c		\
 		$(DARRAY)my_arrlen.c		\

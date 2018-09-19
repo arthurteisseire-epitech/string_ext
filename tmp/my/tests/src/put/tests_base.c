@@ -9,8 +9,6 @@
 #include <criterion/redirect.h>
 #include "my.h"
 
-void redirect_all_std(void);
-
 Test(my_putnbr_base, binary)
 {
 	cr_redirect_stdout();

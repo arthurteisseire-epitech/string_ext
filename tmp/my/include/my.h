@@ -32,10 +32,7 @@ void	my_fdcpy(int fd_dest, int fd_src);
 int	my_putnbr_base(unsigned int nbr, char const *base);
 
 char*	get_next_word(char **str, char const *flags);
-int	get_decimal(float nb, int precision);
-char*	my_ftoa(float nb, int precision);
 int	count_words(char const *str, char const *flags);
-int	is_char_in_str(char const c, char const *str);
 int	len_to_flags(char const *str, char const *flags);
 char*	concat(char *dest, char *src, int len_src);
 int	nb_len(int nb);
@@ -46,5 +43,6 @@ char*	get_before_to(char const *str, char const *flags);
 void	bufferize(char *str);
 int	count_to_word(char const *str, char const *word);
 char*	my_itoa(int nb);
+char*	my_strip(char **str, char const *flags);
 
 #endif
