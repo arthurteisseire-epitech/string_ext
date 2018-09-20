@@ -8,10 +8,10 @@
 #include <string.h>
 #include "my.h"
 
-int strrspn(char const *str, char const *accept)
+unsigned long strrspn(char const *str, char const *accept)
 {
 	int it = strlen(str) - 1;
-	int nb_match = 0;
+	unsigned long nb_match = 0;
 
 	if (str[0] == '\0')
 		return (0);

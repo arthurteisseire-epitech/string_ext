@@ -9,23 +9,23 @@
 #include <criterion/redirect.h>
 #include "my.h"
 
-Test(my_putnbr_base, binary)
+Test(putnbr_base, binary)
 {
 	cr_redirect_stdout();
-	my_putnbr_base(57, "01");
+	putnbr_base(57, "01");
 	cr_assert_stdout_eq_str("111001");
 }
 
-Test(my_putnbr_base, octal)
+Test(putnbr_base, octal)
 {
 	cr_redirect_stdout();
-	my_putnbr_base(57, "01234567");
+	putnbr_base(57, "01234567");
 	cr_assert_stdout_eq_str("71");
 }
 
-Test(my_putnbr_base, hexa)
+Test(putnbr_base, hexa)
 {
 	cr_redirect_stdout();
-	my_putnbr_base(576789, "0123456789ABCDEF");
+	putnbr_base(576789, "0123456789ABCDEF");
 	cr_assert_stdout_eq_str("8CD15");
 }

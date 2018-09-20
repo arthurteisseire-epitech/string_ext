@@ -24,16 +24,16 @@ int	apply_on_array(void **array, int (*applyf)());
 int	write_in_file(char *pathname, int fd_in, int flag_open);
 void	my_fdcpy(int fd_dest, int fd_src);
 
-int	my_putnbr_base(unsigned int nbr, char const *base);
+int	putnbr_base(unsigned int nbr, char const *base);
 
 char*	get_next_word(char **str, char const *flags);
 int	count_words(char const *str, char const *flags);
 char*	concat(char *dest, char *src, int len_src);
-int	strrspn(char const *str, char const *accept);
 char*	get_next_to(char const *str, char const *flags);
 char*	get_before_to(char const *str, char const *flags);
 int	count_to_word(char const *str, char const *word);
 char*	my_itoa(int nb);
 char*	my_strip(char **str, char const *flags);
+unsigned long strrspn(char const *str, char const *accept);
 
 #endif

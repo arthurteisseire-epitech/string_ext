@@ -11,11 +11,10 @@ DTESTS	=	tests/
 DSRC	=	src/
 DSTRING	=	$(DSRC)string/
 DPUT	=	$(DSRC)put/
-DENV	=	$(DSRC)env/
 DARRAY	=	$(DSRC)array/
 DFILE	=	$(DSRC)file/
 
-SRC	=	$(DPUT)my_putnbr_base.c		\
+SRC	=	$(DPUT)putnbr_base.c		\
 		$(DSTRING)my_strip.c		\
 		$(DSTRING)strrspn.c		\
 		$(DSTRING)concat.c		\
@@ -28,12 +27,9 @@ SRC	=	$(DPUT)my_putnbr_base.c		\
 		$(DARRAY)my_arrcpy.c		\
 		$(DARRAY)my_arrdup.c		\
 		$(DARRAY)apply_on_array.c	\
-		$(DARRAY)add_arrelem.c		\
-		$(DARRAY)rm_arrelem.c		\
 		$(DARRAY)free_array.c		\
 		$(DARRAY)split.c		\
 		$(DARRAY)array_to_str.c		\
-		$(DENV)disp_env.c		\
 		$(DFILE)my_fdcpy.c		\
 		$(DFILE)write_in_file.c		\
 
@@ -56,6 +52,9 @@ fclean: clean
 	rm -f $(NAME)
 
 re:	fclean all
+
+debug: CFLAGS += -g
+debug: re
 
 test_run:
 	make test_run -C $(DTESTS)

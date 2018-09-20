@@ -12,18 +12,16 @@ INC		=	$(DROOT)include/
 DSRC		=	$(DROOT)src/
 DSTRING		=	$(DSRC)string/
 DPUT		=	$(DSRC)put/
-DENV		=	$(DSRC)env/
 DARRAY		=	$(DSRC)array/
 DFILE		=	$(DSRC)file/
 
 DSRC_UT		=	src/
 DSTRING_UT	=	$(DSRC_UT)string/
 DPUT_UT		=	$(DSRC_UT)put/
-DENV_UT		=	$(DSRC_UT)env/
 DARRAY_UT	=	$(DSRC_UT)array/
 DFILE_UT	=	$(DSRC_UT)file/
 
-SRC		=	$(DPUT)my_putnbr_base.c			\
+SRC		=	$(DPUT)putnbr_base.c			\
 			$(DSTRING)my_strip.c			\
 			$(DSTRING)strrspn.c			\
 			$(DSTRING)concat.c			\
@@ -35,13 +33,9 @@ SRC		=	$(DPUT)my_putnbr_base.c			\
 			$(DARRAY)my_arrlen.c			\
 			$(DARRAY)my_arrcpy.c			\
 			$(DARRAY)my_arrdup.c			\
-			$(DARRAY)apply_on_array.c		\
-			$(DARRAY)add_arrelem.c			\
-			$(DARRAY)rm_arrelem.c			\
 			$(DARRAY)free_array.c			\
 			$(DARRAY)split.c			\
 			$(DARRAY)array_to_str.c			\
-			$(DENV)disp_env.c			\
 			$(DFILE)my_fdcpy.c			\
 			$(DFILE)write_in_file.c			\
 
