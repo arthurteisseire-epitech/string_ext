@@ -1,0 +1,8 @@
+*.gcno
+*.gcda
+*.gcov
+*.o
+*.a
+.idea
+units
+coverage

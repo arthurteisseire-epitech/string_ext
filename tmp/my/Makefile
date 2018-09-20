@@ -17,7 +17,7 @@ DFILE	=	$(DSRC)file/
 
 SRC	=	$(DPUT)my_putnbr_base.c		\
 		$(DSTRING)my_strip.c		\
-		$(DSTRING)count_endflags.c	\
+		$(DSTRING)strrspn.c		\
 		$(DSTRING)concat.c		\
 		$(DSTRING)get_next_to.c		\
 		$(DSTRING)get_before_to.c	\

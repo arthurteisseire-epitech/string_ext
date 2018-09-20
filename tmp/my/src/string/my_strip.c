@@ -19,7 +19,7 @@ char *my_strip(char **str, char const *flags)
 		return (NULL);
 	to_free = *str;
 	bflags = strspn(*str, flags);
-	eflags = count_endflags(*str, flags);
+	eflags = strrspn(*str, flags);
 	*str += bflags;
 	*str = strndup(*str, strlen(*str) - eflags);
 	free(to_free);

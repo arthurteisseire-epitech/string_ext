@@ -14,7 +14,7 @@ Test(my_strip, simple_test)
 	char *s = strdup("lllllllaaaaaatotolllllllaaaaaa");
 
 	my_strip(&s, "la");
-	cr_assert_str_eq(s, "toto");
+	cr_expect_str_eq(s, "toto");
 }
 
 Test(my_strip, null_case)

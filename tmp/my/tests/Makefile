@@ -25,7 +25,7 @@ DFILE_UT	=	$(DSRC_UT)file/
 
 SRC		=	$(DPUT)my_putnbr_base.c			\
 			$(DSTRING)my_strip.c			\
-			$(DSTRING)count_endflags.c		\
+			$(DSTRING)strrspn.c			\
 			$(DSTRING)concat.c			\
 			$(DSTRING)get_next_to.c			\
 			$(DSTRING)get_before_to.c		\
@@ -46,9 +46,11 @@ SRC		=	$(DPUT)my_putnbr_base.c			\
 			$(DFILE)write_in_file.c			\
 
 SRC_UT		=	$(DARRAY_UT)tests_split.c		\
+			$(DARRAY_UT)tests_array_to_str.c	\
 			$(DSTRING_UT)tests_get_next_to.c	\
 			$(DSTRING_UT)tests_get_before_to.c	\
-			$(DARRAY_UT)tests_array_to_str.c	\
+			$(DSTRING_UT)tests_strrspn.c		\
+			$(DSTRING_UT)tests_my_strip.c		\
 			$(DPUT_UT)tests_base.c			\
 
 CFLAGS	+=	-Wall -W -Wextra --coverage -I$(INC)
@@ -66,8 +68,11 @@ fclean: clean
 
 re: fclean all
 
+debug: CFLAGS += -g
+debug: re
+
 test_run: all
 	./$(NAME)
 	gcov *.gcno &> coverage
 
-.PHONY:	all clean fclean re test_run
+.PHONY:	all clean fclean re test_run debug
