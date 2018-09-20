@@ -22,7 +22,7 @@ DARRAY_UT	=	$(DSRC_UT)array/
 DFILE_UT	=	$(DSRC_UT)file/
 
 SRC		=	$(DPUT)putnbr_base.c			\
-			$(DSTRING)my_strip.c			\
+			$(DSTRING)strip.c			\
 			$(DSTRING)strrspn.c			\
 			$(DSTRING)concat.c			\
 			$(DSTRING)get_next_to.c			\
@@ -33,6 +33,7 @@ SRC		=	$(DPUT)putnbr_base.c			\
 			$(DARRAY)my_arrlen.c			\
 			$(DARRAY)my_arrcpy.c			\
 			$(DARRAY)my_arrdup.c			\
+			$(DARRAY)apply_on_array.c		\
 			$(DARRAY)free_array.c			\
 			$(DARRAY)split.c			\
 			$(DARRAY)array_to_str.c			\
@@ -44,7 +45,7 @@ SRC_UT		=	$(DARRAY_UT)tests_split.c		\
 			$(DSTRING_UT)tests_get_next_to.c	\
 			$(DSTRING_UT)tests_get_before_to.c	\
 			$(DSTRING_UT)tests_strrspn.c		\
-			$(DSTRING_UT)tests_my_strip.c		\
+			$(DSTRING_UT)tests_strip.c		\
 			$(DPUT_UT)tests_base.c			\
 
 CFLAGS	+=	-Wall -W -Wextra --coverage -I$(INC)

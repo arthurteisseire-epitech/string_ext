@@ -15,7 +15,7 @@ DARRAY	=	$(DSRC)array/
 DFILE	=	$(DSRC)file/
 
 SRC	=	$(DPUT)putnbr_base.c		\
-		$(DSTRING)my_strip.c		\
+		$(DSTRING)strip.c		\
 		$(DSTRING)strrspn.c		\
 		$(DSTRING)concat.c		\
 		$(DSTRING)get_next_to.c		\

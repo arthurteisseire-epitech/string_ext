@@ -33,7 +33,7 @@ char*	get_next_to(char const *str, char const *flags);
 char*	get_before_to(char const *str, char const *flags);
 int	count_to_word(char const *str, char const *word);
 char*	my_itoa(int nb);
-char*	my_strip(char **str, char const *flags);
+char*	strip(char **str, char const *flags);
 unsigned long strrspn(char const *str, char const *accept);
 
 #endif

@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2017
-** File Name : my_strip.c
+** File Name : strip.c
 ** File description:
 ** by Arthur Teisseire
 */
@@ -9,7 +9,7 @@
 #include <string.h>
 #include "my.h"
 
-char *my_strip(char **str, char const *flags)
+char *strip(char **str, char const *flags)
 {
 	char *to_free;
 	int bflags;
