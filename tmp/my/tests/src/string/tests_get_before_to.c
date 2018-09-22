@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2017
 ** File Name : tests_get_before_to.c
 ** File description:
-** by Arthur Teisseire
+** Project Name : clib_2018
 */
 
 #include <criterion/criterion.h>

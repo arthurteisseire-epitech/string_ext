@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2017
 ** File Name : concat.c
 ** File description:
-** by Arthur Teisseire
+** Project Name : clib_2018
 */
 
 #include <stdlib.h>

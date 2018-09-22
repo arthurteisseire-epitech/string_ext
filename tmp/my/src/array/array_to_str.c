@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2017
 ** File Name : array_to_str.c
 ** File description:
-** by Arthur Teisseire
+** Project Name : clib_2018
 */
 
 #include <stdlib.h>

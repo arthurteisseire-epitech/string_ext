@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2017
 ** File Name : my_arrlen.h
 ** File description:
-** By Arthur Teisseire
+** Project Name : clib_2018
 */
 
 int my_arrlen(void **data)

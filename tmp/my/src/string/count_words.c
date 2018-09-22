@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2017
 ** File Name : count_words.c
 ** File description:
-** by Arthur Teisseire
+** Project Name : clib_2018
 */
 
 #include <string.h>

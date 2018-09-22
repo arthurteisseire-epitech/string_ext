@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2017
 ** File Name : my.h
 ** File description:
-** By Arthur Teisseire
+** Project Name : clib_2018
 */
 
 #ifndef MY_H

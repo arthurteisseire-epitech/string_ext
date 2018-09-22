@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2017
 ** File Name : apply_on_array.c
 ** File description:
-** by Arthur Teisseire
+** Project Name : clib_2018
 */
 
 int apply_on_array(void **array, int (*applyf)())

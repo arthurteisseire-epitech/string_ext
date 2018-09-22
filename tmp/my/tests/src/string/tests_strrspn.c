@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2017
 ** File Name : tests_strrspn.c
 ** File description:
-** By Arthur Teisseire
+** Project Name : clib_2018
 */
 
 #include <criterion/criterion.h>

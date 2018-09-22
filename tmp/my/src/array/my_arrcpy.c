@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2017
 ** File Name : my_arrcpy.c
 ** File description:
-** by Arthur Teisseire
+** Project Name : clib_2018
 */
 
 void my_arrcpy(void **dest, void **src)
