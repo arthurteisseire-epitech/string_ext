@@ -14,6 +14,6 @@ void **dup_pa(void **src_pa)
 
 	if (dest_pa == NULL)
 		return (NULL);
-	cpy_pa(dest_pa, src_pa);
+	pcpy_pa(dest_pa, src_pa);
 	return (dest_pa);
 }

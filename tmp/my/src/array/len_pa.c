@@ -5,11 +5,11 @@
 ** Project Name : clib_2018
 */
 
-int len_pa(void **data_pa)
+int len_pa(void **_pa)
 {
 	int len_i = 0;
 
-	while (data_pa[len_i])
+	while (_pa[len_i])
 		len_i++;
 	return (len_i);
 }

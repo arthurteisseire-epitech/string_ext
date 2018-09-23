@@ -14,11 +14,12 @@ void		disp_env(char **env);
 
 char**		split(char *str, char const *flags);
 char*		array_to_str(char **array, char *between);
-void		free_array(void **array);
 void		rm_arrelem(void **array, int index, void (*free_func)(void *ptr));
 void*		add_arrelem(void **array, void *data);
 int		apply_on_array(void **array, int (*applyf)());
-void		cpy_pa(void **dest_pa, void **src_pa);
+void		free_pa(void **_pa);
+void		pcpy_pa(void **dest_pa, void **src_pa);
+void		vcpy_pa(int **dest_pa, int **src_pa);
 void**		dup_pa(void **array);
 unsigned int	len_pa(void **data);
 

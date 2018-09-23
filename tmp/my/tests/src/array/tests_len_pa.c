@@ -17,8 +17,8 @@ Test(len_pa, empty_pa)
 
 Test(len_pa, basic)
 {
-	void *data_pa[] = {alloca(1), alloca(1), alloca(1), NULL};
+	void *_pa[] = {alloca(1), alloca(1), alloca(1), NULL};
 
-	cr_assert_neq(len_pa(data_pa), 0);
-	cr_assert_eq(len_pa(data_pa), 3);
+	cr_assert_neq(len_pa(_pa), 0);
+	cr_assert_eq(len_pa(_pa), 3);
 }
