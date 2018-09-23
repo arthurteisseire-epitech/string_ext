@@ -33,7 +33,7 @@ SRC		=	$(DPUT)putnbr_base.c			\
 			$(DARRAY)len_pa.c			\
 			$(DARRAY)pcpy_pa.c			\
 			$(DARRAY)vcpy_pa.c			\
-			$(DARRAY)dup_pa.c			\
+			$(DARRAY)pdup_pa.c			\
 			$(DARRAY)free_pa.c			\
 			$(DARRAY)apply_on_array.c		\
 			$(DARRAY)split.c			\
@@ -46,7 +46,7 @@ SRC_UT		=	$(DARRAY_UT)tests_split.c		\
 			$(DARRAY_UT)tests_len_pa.c		\
 			$(DARRAY_UT)tests_pcpy_pa.c		\
 			$(DARRAY_UT)tests_vcpy_pa.c		\
-			$(DARRAY_UT)tests_dup_pa.c		\
+			$(DARRAY_UT)tests_pdup_pa.c		\
 			$(DARRAY_UT)tests_free_pa.c		\
 			$(DSTRING_UT)tests_get_next_to.c	\
 			$(DSTRING_UT)tests_get_before_to.c	\

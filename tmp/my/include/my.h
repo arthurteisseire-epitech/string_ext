@@ -8,6 +8,8 @@
 #ifndef MY_H
 #define MY_H
 
+#include <stddef.h>
+
 #define READ_SIZE 4096
 
 void		disp_env(char **env);
@@ -19,8 +21,8 @@ void*		add_arrelem(void **array, void *data);
 int		apply_on_array(void **array, int (*applyf)());
 void		free_pa(void **_pa);
 void		pcpy_pa(void **dest_pa, void **src_pa);
-void		vcpy_pa(int **dest_pa, int **src_pa);
-void**		dup_pa(void **array);
+void		vcpy_pa(void **dest_pa, void **src_pa, size_t size);
+void**		pdup_pa(void **array);
 unsigned int	len_pa(void **data);
 
 int		write_in_file(char *pathname, int fd_in, int flag_open);

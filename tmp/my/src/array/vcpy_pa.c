@@ -5,12 +5,15 @@
 ** Project Name : clib_2018
 */
 
-void vcpy_pa(int **dest_pa, int **src_pa)
+#include <stddef.h>
+#include <string.h>
+
+void vcpy_pa(void **dest_pa, void **src_pa, size_t size)
 {
 	int _i = 0;
 
 	while (src_pa[_i]) {
-		*(dest_pa[_i]) = *(src_pa[_i]);
+		memcpy(dest_pa[_i], src_pa[_i], size);
 		_i++;
 	}
 }

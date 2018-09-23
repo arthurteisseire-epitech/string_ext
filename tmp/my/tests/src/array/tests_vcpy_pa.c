@@ -16,15 +16,16 @@ Test(vcpy_pa, empty)
 	dest_pa[0] = alloca(sizeof(int));
 	if (dest_pa[0] == NULL)
 		exit(127);
-	vcpy_pa(dest_pa, src_pa);
+	vcpy_pa((void **)dest_pa, (void **)src_pa, sizeof(int));
 	cr_assert_arr_neq(dest_pa, src_pa, sizeof(void *));
 }
 
-static int cmp(int **a, int **b)
+static int cmp(void **a, void **b)
 {
-	if (**a == **b)
-		return (0);
-	return (1);
+	int **a_ip = (int **)a;
+	int **b_ip = (int **)b;
+
+	return (**a_ip != **b_ip);
 }
 
 Test(vcpy_pa, basic)
@@ -39,8 +40,8 @@ Test(vcpy_pa, basic)
 		if (dest_pa[_i] == NULL)
 			exit(127);
 	}
-	vcpy_pa(dest_pa, src_pa);
+	vcpy_pa((void **)dest_pa, (void **)src_pa, sizeof(int));
 	cr_assert_arr_neq(dest_pa, src_pa, sizeof(void *) * len_i);
-	cr_expect_arr_eq_cmp(dest_pa, src_pa, 1, cmp);
-	cr_expect_arr_eq_cmp(dest_pa, src_pa, 3, cmp);
+	cr_expect_arr_eq_cmp((void **)dest_pa, (void **)src_pa, 1, cmp);
+	cr_expect_arr_eq_cmp((void **)dest_pa, (void **)src_pa, 3, cmp);
 }
