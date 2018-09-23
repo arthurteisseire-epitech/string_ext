@@ -15,7 +15,7 @@
 	All commits MUST be according to the next : [<char>]<header> -- <description>{ : fixed}
 
 	<char> :
-		- '+' for addition	//if a function it implicitly means that the UT too, there's no need to precise it
+		- '+' for addition	//if a function is added it implicitly means that the UT too, there's no need to precise it
 		- '-' for deletion
 		- '*' for modification
 	<header> : doesn't normally begins with a capital letter except for special cases
@@ -40,9 +40,9 @@
 	char		:	_c
 	function pointer:	_f
 
+	pointer		:	_p
 	array		:	_a
 	double array	:	_g	//memo :: grid
-	pointer		:	_p
 
 ### Types name ###
 	structs		:	_struct

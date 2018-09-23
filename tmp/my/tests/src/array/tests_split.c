@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2017
-** File Name : test_split.c
+** File Name : tests_split.c
 ** File description:
 ** Project Name : clib_2018
 */
@@ -41,14 +41,12 @@ Test(split, split)
 	cr_assert_str_eq(got, "   /bin/ls   -l  ");
 }
 
-#include "malloc.h"
 Test(split, mem_fail)
 {
 	char *got = "   /bin/ls   -l  ";
 	char *expected[3] = {"/bin/ls", "-l", NULL};
 	int i = 0;
 
-	mallopt(M_ARENA_MAX, 1);
 	char **res = split(got, " ");
 	while (expected[i] != NULL) {
 		cr_assert_str_eq(res[i], expected[i]);

@@ -30,9 +30,9 @@ SRC		=	$(DPUT)putnbr_base.c			\
 			$(DSTRING)get_next_word.c		\
 			$(DSTRING)count_words.c			\
 			$(DSTRING)my_itoa.c			\
-			$(DARRAY)my_arrlen.c			\
-			$(DARRAY)my_arrcpy.c			\
-			$(DARRAY)my_arrdup.c			\
+			$(DARRAY)len_pa.c			\
+			$(DARRAY)cpy_pa.c			\
+			$(DARRAY)dup_pa.c			\
 			$(DARRAY)apply_on_array.c		\
 			$(DARRAY)free_array.c			\
 			$(DARRAY)split.c			\
@@ -42,6 +42,9 @@ SRC		=	$(DPUT)putnbr_base.c			\
 
 SRC_UT		=	$(DARRAY_UT)tests_split.c		\
 			$(DARRAY_UT)tests_array_to_str.c	\
+			$(DARRAY_UT)tests_len_pa.c		\
+			$(DARRAY_UT)tests_cpy_pa.c		\
+			$(DARRAY_UT)tests_dup_pa.c		\
 			$(DSTRING_UT)tests_get_next_to.c	\
 			$(DSTRING_UT)tests_get_before_to.c	\
 			$(DSTRING_UT)tests_strrspn.c		\

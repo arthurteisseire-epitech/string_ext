@@ -14,24 +14,24 @@ DPUT	=	$(DSRC)put/
 DARRAY	=	$(DSRC)array/
 DFILE	=	$(DSRC)file/
 
-SRC	=	$(DPUT)putnbr_base.c		\
-		$(DSTRING)strip.c		\
-		$(DSTRING)strrspn.c		\
-		$(DSTRING)concat.c		\
-		$(DSTRING)get_next_to.c		\
-		$(DSTRING)get_before_to.c	\
-		$(DSTRING)get_next_word.c	\
-		$(DSTRING)count_words.c		\
-		$(DSTRING)my_itoa.c		\
-		$(DARRAY)my_arrlen.c		\
-		$(DARRAY)my_arrcpy.c		\
-		$(DARRAY)my_arrdup.c		\
-		$(DARRAY)apply_on_array.c	\
-		$(DARRAY)free_array.c		\
-		$(DARRAY)split.c		\
-		$(DARRAY)array_to_str.c		\
-		$(DFILE)my_fdcpy.c		\
-		$(DFILE)write_in_file.c		\
+SRC	=	$(DPUT)putnbr_base.c			\
+		$(DSTRING)strip.c			\
+		$(DSTRING)strrspn.c			\
+		$(DSTRING)concat.c			\
+		$(DSTRING)get_next_to.c			\
+		$(DSTRING)get_before_to.c		\
+		$(DSTRING)get_next_word.c		\
+		$(DSTRING)count_words.c			\
+		$(DSTRING)my_itoa.c			\
+		$(DARRAY)len_pa.c			\
+		$(DARRAY)cpy_pa.c			\
+		$(DARRAY)dup_pa.c			\
+		$(DARRAY)apply_on_array.c		\
+		$(DARRAY)free_array.c			\
+		$(DARRAY)split.c			\
+		$(DARRAY)array_to_str.c			\
+		$(DFILE)my_fdcpy.c			\
+		$(DFILE)write_in_file.c			\
 
 CFLAGS	+=	-Wall -W -Wextra -I$(INC)
 OBJ	=	$(SRC:.c=.o)
