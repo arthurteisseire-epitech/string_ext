@@ -22,7 +22,8 @@ int		apply_on_array(void **array, int (*applyf)());
 void		free_pa(void **_pa);
 void		pcpy_pa(void **dest_pa, void **src_pa);
 void		vcpy_pa(void **dest_pa, void **src_pa, size_t size);
-void**		pdup_pa(void **array);
+void**		pdup_pa(void **src_pa);
+void**		vdup_pa(void **src_pa, size_t size);
 unsigned int	len_pa(void **data);
 
 int		write_in_file(char *pathname, int fd_in, int flag_open);

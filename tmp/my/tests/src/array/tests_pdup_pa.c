@@ -13,17 +13,16 @@ Test(pdup_pa, empty_pa)
 	void *src_pa[] = {NULL};
 	void **dest_pa = pdup_pa(src_pa);
 
-	if (dest_pa == NULL)
-		exit(127);
+	cr_assert_not_null(dest_pa);
 	cr_assert_arr_eq(dest_pa, src_pa, sizeof(void *));
 }
 
 Test(pdup_pa, basic)
 {
-	void *src_pa[] = {alloca(1), alloca(1), alloca(1), NULL};
+	int _ia[] = {0, 1, 8};
+	void *src_pa[] = {&_ia[0], &_ia[1], &_ia[2], NULL};
 	void **dest_pa = pdup_pa(src_pa);
 
-	if (dest_pa == NULL)
-		exit(127);
+	cr_assert_not_null(dest_pa);
 	cr_assert_arr_eq(dest_pa, src_pa, sizeof(void *) * 4);
 }
