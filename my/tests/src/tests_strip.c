@@ -8,7 +8,7 @@
 #include <criterion/criterion.h>
 #include "my.h"
 
-void test_strip(char const *src, char const *accept, char *expected)
+void test_strip(char const *src, char const *accept, char const *expected)
 {
 	char *dest = strip(src, accept);
 
