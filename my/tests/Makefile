@@ -11,9 +11,15 @@ DINC		=	$(DROOT)include/
 DSRC		=	$(DROOT)src/
 DSRC_UT		=	src/
 
-SRC		=	$(DSRC)strip.c
+SRC		=	$(DSRC)strip.c			\
+			$(DSRC)strrpbrk.c		\
+			$(DSRC)strrspn.c		\
+			$(DSRC)strlast.c		\
 
-SRC_UT		=	$(DSRC_UT)tests_strip.c
+SRC_UT		=	$(DSRC_UT)tests_strip.c		\
+			$(DSRC_UT)tests_strrpbrk.c	\
+			$(DSRC_UT)tests_strrspn.c	\
+			$(DSRC_UT)tests_strlast.c	\
 
 CFLAGS	+=	-Wall -W -Wextra --coverage -I$(DINC)
 LDFLAGS	=	-lcriterion -lgcov

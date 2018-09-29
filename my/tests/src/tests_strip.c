@@ -46,4 +46,5 @@ Test(strip, both)
 	test_strip("   test   ", " ", "test");
 	test_strip("  !! test  !! ", " !", "test");
 	test_strip("  !! test  !! ", " ! ! ", "test");
+	test_strip("  !! test ! test !! ", " ! ! ", "test ! test");
 }

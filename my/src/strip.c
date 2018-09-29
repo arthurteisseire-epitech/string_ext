@@ -6,10 +6,11 @@
 */
 
 #include <string.h>
+#include "my.h"
 
 char* strip(char const *src, char const *accept)
 {
 	char *dest = (char *)src + strspn(src, accept);
 
-	return (strndup(dest, strcspn(dest, accept)));
+	return (strndup(dest, strlen(dest) - strrspn(dest, accept)));
 }
