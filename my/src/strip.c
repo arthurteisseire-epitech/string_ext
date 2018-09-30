@@ -8,7 +8,7 @@
 #include <string.h>
 #include "my.h"
 
-char* strip(char const *src, char const *accept)
+char* strip(const char *src, const char *accept)
 {
 	char *dest = (char *)src + strspn(src, accept);
 

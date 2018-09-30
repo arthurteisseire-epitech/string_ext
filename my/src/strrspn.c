@@ -8,7 +8,7 @@
 #include <string.h>
 #include "my.h"
 
-size_t strrspn(char const *src, char const *accept)
+size_t strrspn(const char *src, const char *accept)
 {
 	size_t len = strlen(src);
 	char *dest;

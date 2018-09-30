@@ -15,11 +15,16 @@ SRC		=	$(DSRC)strip.c			\
 			$(DSRC)strrpbrk.c		\
 			$(DSRC)strrspn.c		\
 			$(DSRC)strlast.c		\
+			$(DSRC)strsplit.c		\
+			$(DSRC)free_pa.c		\
+			$(DSRC)len_pa.c			\
 
 SRC_UT		=	$(DSRC_UT)tests_strip.c		\
 			$(DSRC_UT)tests_strrpbrk.c	\
 			$(DSRC_UT)tests_strrspn.c	\
 			$(DSRC_UT)tests_strlast.c	\
+			$(DSRC_UT)tests_strsplit.c	\
+			$(DSRC_UT)tests_len_pa.c	\
 
 CFLAGS	+=	-Wall -W -Wextra --coverage -I$(DINC)
 LDFLAGS	=	-lcriterion -lgcov
