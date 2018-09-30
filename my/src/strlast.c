@@ -1,8 +1,8 @@
 /*
-** EPITECH PROJECT, 2017
-** File Name : strlast.c
+** EPITECH PROJECT, 2018
+** clib_2018
 ** File description:
-** Project Name : clib_2018
+** strlast.c
 */
 
 #include <string.h>

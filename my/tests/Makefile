@@ -1,8 +1,8 @@
 ##
-## EPITECH PROJECT, 2017
-## Makefile
+## EPITECH PROJECT, 2018
+## clib_2018
 ## File description:
-## Arthur Teisseire
+## Makefile
 ##
 
 CC		=	gcc

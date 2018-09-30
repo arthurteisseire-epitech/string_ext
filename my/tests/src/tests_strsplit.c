@@ -1,8 +1,8 @@
 /*
-** EPITECH PROJECT, 2017
-** File Name : tests_strsplit.c
+** EPITECH PROJECT, 2018
+** clib_2018
 ** File description:
-** Project Name : clib_2018
+** tests_strsplit.c
 */
 
 #include <criterion/criterion.h>

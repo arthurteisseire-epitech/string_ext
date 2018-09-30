@@ -1,8 +1,8 @@
 /*
-** EPITECH PROJECT, 2017
-** File Name : tests_strrpbrk.c
+** EPITECH PROJECT, 2018
+** clib_2018
 ** File description:
-** Project Name : clib_2018
+** tests_strrpbrk.c
 */
 
 #include <criterion/criterion.h>

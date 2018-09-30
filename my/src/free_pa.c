@@ -1,8 +1,8 @@
 /*
-** EPITECH PROJECT, 2017
-** File Name : free_pa.c
+** EPITECH PROJECT, 2018
+** clib_2018
 ** File description:
-** Project Name : clib_2018
+** free_pa.c
 */
 
 #include <stdlib.h>

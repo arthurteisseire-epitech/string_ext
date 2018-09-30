@@ -1,8 +1,8 @@
 /*
-** EPITECH PROJECT, 2017
-** File Name : tests_len_pa.c
+** EPITECH PROJECT, 2018
+** clib_2018
 ** File description:
-** Project Name : clib_2018
+** tests_len_pa.c
 */
 
 #include <criterion/criterion.h>
