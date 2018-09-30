@@ -11,13 +11,14 @@
 typedef unsigned long size_t;
 
 char*	strlast(const char *str);
-char*	strrpbrk(const char *src, const char *accept);
-size_t	strrspn(const char *src, const char *accept);
+char*	strrpbrk(const char *str, const char *accept);
+size_t	strrspn(const char *str, const char *accept);
 size_t	strcount(const char *str, const char *delim);
-char*	strip(const char *src, const char *accept);
-char**	strsplit(const char *src, const char *delim);
+char*	strip(const char *str, const char *accept);
+char**	strsplit(const char *str, const char *delim);
+char*	strcat_alloc(const char *str1, const char *str2);
 
-size_t	len_pa(const void **src);
+size_t	len_pa(const void **array);
 void	free_pa(void **tofree_pa);
 
 #endif

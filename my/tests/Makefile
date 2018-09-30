@@ -17,6 +17,7 @@ SRC		=	$(DSRC)strip.c			\
 			$(DSRC)strcount.c		\
 			$(DSRC)strlast.c		\
 			$(DSRC)strsplit.c		\
+			$(DSRC)strcat_alloc.c		\
 			$(DSRC)free_pa.c		\
 			$(DSRC)len_pa.c			\
 
@@ -26,6 +27,7 @@ SRC_UT		=	$(DSRC_UT)tests_strip.c		\
 			$(DSRC_UT)tests_strcount.c	\
 			$(DSRC_UT)tests_strlast.c	\
 			$(DSRC_UT)tests_strsplit.c	\
+			$(DSRC_UT)tests_strcat_alloc.c	\
 			$(DSRC_UT)tests_len_pa.c	\
 
 CFLAGS	+=	-Wall -W -Wextra --coverage -I$(DINC)
