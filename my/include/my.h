@@ -19,6 +19,7 @@ char**	strsplit(const char *str, const char *delim);
 char*	strcat_alloc(const char *str1, const char *str2);
 
 size_t	len_pa(const void **array);
+size_t	strlen_pa(const char **array);
 void	free_pa(void **tofree_pa);
 
 #endif
