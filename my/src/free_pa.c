@@ -9,11 +9,11 @@
 
 void free_pa(void **tofree_pa)
 {
-	int i = 0;
+    int i = 0;
 
-	while (tofree_pa[i] != NULL) {
-		free(tofree_pa[i]);
-		i++;
-	}
-	free(tofree_pa);
+    while (tofree_pa[i] != NULL) {
+        free(tofree_pa[i]);
+        i++;
+    }
+    free(tofree_pa);
 }

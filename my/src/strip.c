@@ -10,7 +10,7 @@
 
 char* strip(const char *src, const char *accept)
 {
-	char *dest = (char *)src + strspn(src, accept);
+    char *dest = (char *)src + strspn(src, accept);
 
-	return (strndup(dest, strlen(dest) - strrspn(dest, accept)));
+    return (strndup(dest, strlen(dest) - strrspn(dest, accept)));
 }

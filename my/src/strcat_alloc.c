@@ -10,11 +10,11 @@
 
 char *strcat_alloc(const char *str1, const char *str2)
 {
-	char *dest = malloc(sizeof(char) * (strlen(str1) + strlen(str2) + 1));
+    char *dest = malloc(sizeof(char) * (strlen(str1) + strlen(str2) + 1));
 
-	if (dest != NULL) {
-		strcpy(dest, str1);
-		strcat(dest, str2);
-	}
-	return (dest);
+    if (dest != NULL) {
+        strcpy(dest, str1);
+        strcat(dest, str2);
+    }
+    return (dest);
 }
