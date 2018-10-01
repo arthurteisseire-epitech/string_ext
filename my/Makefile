@@ -10,7 +10,16 @@ INC	=	include/
 DTESTS	=	tests/
 DSRC	=	src/
 
-SRC	=	
+SRC	=	$(DSRC)strip.c			\
+		$(DSRC)strrpbrk.c		\
+		$(DSRC)strrspn.c		\
+		$(DSRC)strcount.c		\
+		$(DSRC)strlast.c		\
+		$(DSRC)strsplit.c		\
+		$(DSRC)strjoin.c		\
+		$(DSRC)strcat_alloc.c		\
+		$(DSRC)len_pa.c			\
+		$(DSRC)strlen_pa.c		\
 
 CFLAGS	+=	-Wall -W -Wextra -I$(INC)
 OBJ	=	$(SRC:.c=.o)
