@@ -19,7 +19,6 @@ SRC		=	$(DSRC)strip.c			\
 			$(DSRC)strsplit.c		\
 			$(DSRC)strjoin.c		\
 			$(DSRC)strcat_alloc.c		\
-			$(DSRC)free_pa.c		\
 			$(DSRC)len_pa.c			\
 			$(DSRC)strlen_pa.c		\
 
