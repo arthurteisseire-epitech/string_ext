@@ -6,8 +6,9 @@ before_script:
   - cd build
   - cmake ..
   - cmake --build .
+  - make install
   - export LD_LIBRARY_PATH=/usr/lib/libcriterion.so
-  - cd ..
+  - cd ../..
 
 test:
     script:
