@@ -19,8 +19,8 @@ SRC		=	$(DSRC)strip.c					\
 			$(DSRC)strsplit.c				\
 			$(DSRC)strjoin.c				\
 			$(DSRC)strcat_alloc.c			\
-			$(DSRC)len_pa.c					\
-			$(DSRC)strlen_pa.c				\
+			$(DSRC)arrlen.c					\
+			$(DSRC)arrstrlen.c				\
 
 SRC_UT	=	$(DSRC_UT)tests_strip.c			\
 			$(DSRC_UT)tests_strrpbrk.c		\
@@ -30,8 +30,8 @@ SRC_UT	=	$(DSRC_UT)tests_strip.c			\
 			$(DSRC_UT)tests_strsplit.c		\
 			$(DSRC_UT)tests_strjoin.c		\
 			$(DSRC_UT)tests_strcat_alloc.c	\
-			$(DSRC_UT)tests_len_pa.c		\
-			$(DSRC_UT)tests_strlen_pa.c		\
+			$(DSRC_UT)tests_arrlen.c		\
+			$(DSRC_UT)tests_arrstrlen.c		\
 
 CFLAGS	+=	-Wall -W -Wextra --coverage -I$(DINC)
 LDFLAGS	=	-lcriterion -lgcov

@@ -8,24 +8,24 @@
 #include <criterion/criterion.h>
 #include "my.h"
 
-int cmpf(char **a, char **b)
+int cmpf(char **dest_str, char **expected_str)
 {
-    return (strcmp(*a, *b));
+    return (strcmp(*dest_str, *expected_str));
 }
 
 void test_strsplit(char const *src, char const *delim, char const **expected)
 {
-    char **dest_pa = strsplit(src, delim);
+    char **dest = strsplit(src, delim);
 
-    cr_assert_not_null(dest_pa);
+    cr_assert_not_null(dest);
     cr_expect_arr_eq_cmp(
-        dest_pa,
+        dest,
         (char **)expected,
-        len_pa((const void **)dest_pa),
+        arrlen((const void **) dest),
         cmpf
     );
-    free(*dest_pa);
-    free(dest_pa);
+    free(*dest);
+    free(dest);
 }
 
 Test(strsplit, empty)

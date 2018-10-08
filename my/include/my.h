@@ -10,16 +10,16 @@
 
 typedef unsigned long size_t;
 
-char* strlast(const char *str);
-char* strrpbrk(const char *str, const char *accept);
-size_t strrspn(const char *str, const char *accept);
-size_t strcount(const char *str, const char *delim);
-char* strip(const char *str, const char *accept);
-char** strsplit(const char *str, const char *delim);
-char* strjoin(const char **array, const char *sep);
-char* strcat_alloc(const char *str1, const char *str2);
+char*   strlast(const char *str);
+char*   strrpbrk(const char *str, const char *accept);
+size_t  strrspn(const char *str, const char *accept);
+size_t  strcount(const char *str, const char *delim);
+char*   strip(const char *str, const char *accept);
+char**  strsplit(const char *str, const char *delim);
+char*   strjoin(const char **array, const char *sep);
+char*   strcat_alloc(const char *str1, const char *str2);
 
-size_t len_pa(const void **array);
-size_t strlen_pa(const char **array);
+size_t  arrlen(const void **array);
+size_t arrstrlen(const char **array);
 
 #endif

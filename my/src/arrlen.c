@@ -7,9 +7,9 @@
 
 #include <stddef.h>
 
-size_t len_pa(const void **src_pa)
+size_t arrlen(const void **src_pa)
 {
-    int i = 0;
+    size_t i = 0;
 
     while (src_pa[i] != NULL)
         i++;

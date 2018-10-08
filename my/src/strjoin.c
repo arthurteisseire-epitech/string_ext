@@ -12,9 +12,9 @@
 char *strjoin(const char **array, const char *sep)
 {
     unsigned int i = 0;
-    size_t nb_str = len_pa((const void **)array);
+    size_t nb_str = arrlen((const void **) array);
     char *dest = malloc(sizeof(char) *
-        ((strlen_pa(array) + (nb_str * strlen(sep)) + 1)));
+        ((arrstrlen(array) + (nb_str * strlen(sep)) + 1)));
 
     if (dest == NULL)
         return (NULL);

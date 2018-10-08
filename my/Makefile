@@ -18,8 +18,8 @@ SRC	=	$(DSRC)strip.c			\
 		$(DSRC)strsplit.c		\
 		$(DSRC)strjoin.c		\
 		$(DSRC)strcat_alloc.c	\
-		$(DSRC)len_pa.c			\
-		$(DSRC)strlen_pa.c		\
+		$(DSRC)arrlen.c			\
+		$(DSRC)arrstrlen.c		\
 
 CFLAGS	+=	-Wall -W -Wextra -I$(INC)
 OBJ		=	$(SRC:.c=.o)
