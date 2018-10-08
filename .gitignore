@@ -6,3 +6,5 @@
 .idea
 units
 coverage
+CMakeLists.txt
+cmake-build-debug/
