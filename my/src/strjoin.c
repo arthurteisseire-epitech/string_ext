@@ -11,22 +11,18 @@
 
 char *strjoin(const char **array, const char *sep)
 {
-    unsigned int i = 0;
+    unsigned int i;
     size_t nb_str = arrlen((const void **) array);
-    char *dest = malloc(sizeof(char) *
-        ((arrstrlen(array) + (nb_str * strlen(sep)) + 1)));
+    size_t total_len = arrstrlen(array) + nb_str * strlen(sep);
+    char *dest = calloc(total_len, sizeof(char));
 
-    if (dest == NULL)
-        return (NULL);
-    dest[0] = '\0';
-    if (nb_str == 0)
+    if (dest == NULL || nb_str == 0)
         return (dest);
-    while (i < nb_str - 1) {
+    for (i = 0; i < nb_str - 1; i++) {
         if (array[i][0] != '\0') {
             strcat(dest, array[i]);
             strcat(dest, sep);
         }
-        i++;
     }
     strcat(dest, array[i]);
     return (dest);
