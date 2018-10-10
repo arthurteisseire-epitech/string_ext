@@ -1,6 +1,6 @@
 ##
 ## EPITECH PROJECT, 2018
-## clib_2018
+## my
 ## File description:
 ## Makefile
 ##
