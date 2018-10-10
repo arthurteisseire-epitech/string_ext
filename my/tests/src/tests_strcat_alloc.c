@@ -8,9 +8,10 @@
 #include <criterion/criterion.h>
 #include "my.h"
 
-void test_strcat_alloc(const char *str1, const char *str2, const char *expected)
+void test_strcat_alloc(const char *str_left, const char *str_right,
+                       const char *expected)
 {
-    char *dest = strcat_alloc(str1, str2);
+    char *dest = strcat_alloc(str_left, str_right);
 
     cr_assert_not_null(dest);
     cr_expect_str_eq(dest, expected);

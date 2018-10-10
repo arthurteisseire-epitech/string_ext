@@ -17,6 +17,7 @@ Test(strrpbrk, empty)
 
 Test(strrpbrk, basic)
 {
+    cr_expect_str_eq(strrpbrk("a", "a"), "a");
     cr_expect_str_eq(strrpbrk("abc", "c"), "c");
     cr_expect_str_eq(strrpbrk("abc", "b"), "bc");
     cr_expect_str_eq(strrpbrk("abca", "a"), "a");

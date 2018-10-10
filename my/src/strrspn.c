@@ -11,15 +11,15 @@
 size_t strrspn(const char *src, const char *accept)
 {
     size_t len = strlen(src);
-    char *dest;
+    char *end_ptr;
 
     if (len == 0)
         return (0);
-    dest = (char *)src + len - 1;
-    while (strchr(accept, *dest) != NULL) {
-        if (dest == src)
+    end_ptr = (char *)src + len - 1;
+    while (strchr(accept, *end_ptr) != NULL) {
+        if (end_ptr == src)
             return (len);
-        dest--;
+        end_ptr--;
     }
-    return ((len - 1) - (dest - src));
+    return ((len - 1) - (end_ptr - src));
 }

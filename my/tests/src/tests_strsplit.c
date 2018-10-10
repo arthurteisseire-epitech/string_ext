@@ -21,7 +21,7 @@ void test_strsplit(char const *src, char const *delim, char const **expected)
     cr_expect_arr_eq_cmp(
         dest,
         (char **)expected,
-        arrlen((const void **) dest),
+        arrlen((const void **)dest),
         cmpf
     );
     free(*dest);
@@ -40,8 +40,8 @@ Test(strsplit, basic)
 {
     test_strsplit("t1 t2", " ", (const char *[2]){"t1", "t2"});
     test_strsplit(" t1 t2 t3 ", " ", (const char *[3]){"t1", "t2", "t3"});
-    test_strsplit("  t1, ,  t2,  t3", " ,."
-        , (const char *[3]){"t1", "t2", "t3"});
-    test_strsplit("  t1, ,  t2,  t3,  .", " ,."
-        , (const char *[3]){"t1", "t2", "t3"});
+    test_strsplit("  t1, ,  t2,  t3", " ,.",
+                  (const char *[3]){"t1", "t2", "t3"});
+    test_strsplit("  t1, ,  t2,  t3,  .", " ,.",
+                  (const char *[3]){"t1", "t2", "t3"});
 }

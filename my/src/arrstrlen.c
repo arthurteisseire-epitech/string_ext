@@ -9,7 +9,7 @@
 
 size_t arrstrlen(const char **array)
 {
-    size_t i = 0;
+    unsigned int i = 0;
     size_t len = 0;
 
     while (array[i] != NULL) {

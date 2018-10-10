@@ -15,6 +15,7 @@ Test(strlast, empty)
 
 Test(strlast, basic)
 {
+    cr_expect_str_eq(strlast("a"), "a");
     cr_expect_str_eq(strlast("last char is a z"), "z");
     cr_expect_str_eq(strlast("last char is a space "), " ");
     cr_expect_str_eq(strlast("last char is the number 2"), "2");

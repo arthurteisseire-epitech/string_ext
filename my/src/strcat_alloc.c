@@ -8,13 +8,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-char *strcat_alloc(const char *str1, const char *str2)
+char *strcat_alloc(const char *str_left, const char *str_right)
 {
-    char *dest = malloc(sizeof(char) * (strlen(str1) + strlen(str2) + 1));
+    size_t dest_len = strlen(str_left) + strlen(str_right) + 1;
+    char *dest = malloc(sizeof(char) * dest_len);
 
     if (dest != NULL) {
-        strcpy(dest, str1);
-        strcat(dest, str2);
+        strcpy(dest, str_left);
+        strcat(dest, str_right);
     }
     return (dest);
 }
