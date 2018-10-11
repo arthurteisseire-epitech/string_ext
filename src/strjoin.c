@@ -1,13 +1,13 @@
 /*
 ** EPITECH PROJECT, 2018
-** my
+** string_ext
 ** File description:
 ** strjoin.c
 */
 
 #include <stdlib.h>
 #include <string.h>
-#include "my.h"
+#include "string_ext.h"
 
 char *strjoin(const char **array, const char *sep)
 {

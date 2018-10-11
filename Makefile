@@ -1,6 +1,6 @@
 ##
 ## EPITECH PROJECT, 2018
-## my
+## string_ext
 ## File description:
 ## Makefile
 ##
@@ -23,7 +23,7 @@ SRC	=	$(DSRC)strip.c			\
 
 CFLAGS	+=	-Wall -W -Wextra -I$(INC)
 OBJ		=	$(SRC:.c=.o)
-NAME	=	libmy.a
+NAME	=	libstring_ext.a
 
 all: $(OBJ)
 	ar rc $(NAME) $(OBJ)

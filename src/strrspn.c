@@ -1,12 +1,12 @@
 /*
 ** EPITECH PROJECT, 2018
-** my
+** string_ext
 ** File description:
 ** strrspn.c
 */
 
 #include <string.h>
-#include "my.h"
+#include "string_ext.h"
 
 size_t strrspn(const char *str, const char *accept)
 {

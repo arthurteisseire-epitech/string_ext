@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2018
-** my
+** string_ext
 ** File description:
 ** arrstrlen.c
 */

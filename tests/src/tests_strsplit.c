@@ -1,12 +1,12 @@
 /*
 ** EPITECH PROJECT, 2018
-** my
+** string_ext
 ** File description:
 ** tests_strsplit.c
 */
 
 #include <criterion/criterion.h>
-#include "my.h"
+#include "string_ext.h"
 
 int cmpf(char **dest_str, char **expected_str)
 {

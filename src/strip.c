@@ -1,12 +1,12 @@
 /*
 ** EPITECH PROJECT, 2018
-** my
+** string_ext
 ** File description:
 ** strip.c
 */
 
 #include <string.h>
-#include "my.h"
+#include "string_ext.h"
 
 char *strip(const char *str, const char *accept)
 {

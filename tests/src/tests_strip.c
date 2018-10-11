@@ -1,12 +1,12 @@
 /*
 ** EPITECH PROJECT, 2018
-** my
+** string_ext
 ** File description:
 ** tests_strip.c
 */
 
 #include <criterion/criterion.h>
-#include "my.h"
+#include "string_ext.h"
 
 void test_strip(char const *str, char const *accept, char const *expected)
 {

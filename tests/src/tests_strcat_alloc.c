@@ -1,12 +1,12 @@
 /*
 ** EPITECH PROJECT, 2018
-** my
+** string_ext
 ** File description:
 ** tests_strcat_alloc.c
 */
 
 #include <criterion/criterion.h>
-#include "my.h"
+#include "string_ext.h"
 
 void test_strcat_alloc(const char *str_left, const char *str_right,
                        const char *expected)

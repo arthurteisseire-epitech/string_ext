@@ -1,12 +1,12 @@
 /*
 ** EPITECH PROJECT, 2018
-** my
+** string_ext
 ** File description:
 ** strrpbrk.c
 */
 
 #include <string.h>
-#include "my.h"
+#include "string_ext.h"
 
 char *strrpbrk(char const *str, char const *accept)
 {

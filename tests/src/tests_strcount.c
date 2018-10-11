@@ -1,12 +1,12 @@
 /*
 ** EPITECH PROJECT, 2018
-** my
+** string_ext
 ** File description:
 ** tests_strcount.c
 */
 
 #include <criterion/criterion.h>
-#include "my.h"
+#include "string_ext.h"
 
 Test(strcount, empty)
 {

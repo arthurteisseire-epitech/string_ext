@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2018
-** my
+** string_ext
 ** File description:
-** my.h
+** string_ext.h
 */
 
 #ifndef MY_H
