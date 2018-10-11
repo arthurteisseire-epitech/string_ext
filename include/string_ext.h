@@ -5,8 +5,8 @@
 ** string_ext.h
 */
 
-#ifndef MY_H
-#define MY_H
+#ifndef STRING_EXT_H
+#define STRING_EXT_H
 
 typedef unsigned long size_t;
 
