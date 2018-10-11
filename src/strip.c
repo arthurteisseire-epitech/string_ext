@@ -13,5 +13,6 @@ char *strip(const char *str, const char *accept)
     char *dest = (char *)str + strspn(str, accept);
     size_t dest_len = strlen(dest) - strrspn(dest, accept);
 
-    return (strndup(dest, dest_len));
+    dest = strndup(dest, dest_len);
+    return (dest);
 }
