@@ -17,7 +17,7 @@ Test(arrlen, empty)
 
 Test(arrlen, basic)
 {
-    int array[] = {1, 2, 3, 4, 5};
+    int array[] = {1, 2, 3};
     const void *src[] = {&array[0], &array[1], &array[2], NULL};
 
     cr_expect_eq(arrlen((const void **)src), 3);

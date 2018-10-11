@@ -8,9 +8,9 @@
 #include <criterion/criterion.h>
 #include "my.h"
 
-void test_strip(char const *src, char const *accept, char const *expected)
+void test_strip(char const *str, char const *accept, char const *expected)
 {
-    char *dest = strip(src, accept);
+    char *dest = strip(str, accept);
 
     cr_assert_not_null(dest);
     cr_expect_str_eq(dest, expected);

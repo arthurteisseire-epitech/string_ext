@@ -13,9 +13,9 @@ int cmpf(char **dest_str, char **expected_str)
     return (strcmp(*dest_str, *expected_str));
 }
 
-void test_strsplit(char const *src, char const *delim, char const **expected)
+void test_strsplit(char const *str, char const *delim, char const **expected)
 {
-    char **dest = strsplit(src, delim);
+    char **dest = strsplit(str, delim);
 
     cr_assert_not_null(dest);
     cr_expect_arr_eq_cmp(

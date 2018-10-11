@@ -8,14 +8,14 @@
 #include <string.h>
 #include "my.h"
 
-char *strrpbrk(char const *src, char const *accept)
+char *strrpbrk(char const *str, char const *accept)
 {
-    char *dest = strlast(src);
+    char *dest = strlast(str);
 
     if (dest == NULL)
         return (NULL);
     while (strchr(accept, *dest) == NULL) {
-        if (dest == src)
+        if (dest == str)
             return (NULL);
         dest--;
     }
