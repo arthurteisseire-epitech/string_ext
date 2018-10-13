@@ -53,6 +53,5 @@ debug: re
 
 test_run: all
 	./$(NAME)
-	gcov *.gcno &> coverage
 
 .PHONY:	all clean fclean re debug test_run
