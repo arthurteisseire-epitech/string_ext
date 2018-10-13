@@ -14,7 +14,7 @@ char **strsplit(const char *str, const char *delim)
     unsigned int i = 0;
     char *str_tmp;
     char *save_ptr;
-    char **dest = malloc(sizeof(char *) * strcount(str, delim) + 1);
+    char **dest = malloc(sizeof(char *) * (strcount(str, delim) + 1));
 
     if (dest == NULL)
         return (NULL);
