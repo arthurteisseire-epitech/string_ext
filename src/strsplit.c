@@ -27,8 +27,8 @@ static void insert_tokens(char **dest, char *str_dup, const char *delim)
 
 char **strsplit(const char *str, const char *delim)
 {
-    size_t nb_tokens = strcount(str, delim);
-    char **dest = malloc(sizeof(char *) * (nb_tokens + 1));
+    size_t nb_tok = strcount(str, delim);
+    char **dest = malloc(sizeof(char *) * (nb_tok + 1));
     char *tok_str;
 
     if (dest == NULL)

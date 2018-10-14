@@ -10,8 +10,8 @@
 
 char *strcat_alloc(const char *str_left, const char *str_right)
 {
-    size_t dest_len = strlen(str_left) + strlen(str_right) + 1;
-    char *dest = malloc(sizeof(char) * dest_len);
+    size_t dest_len = strlen(str_left) + strlen(str_right);
+    char *dest = malloc(sizeof(char) * (dest_len + 1));
 
     if (dest != NULL) {
         strcpy(dest, str_left);

@@ -8,7 +8,7 @@
 #include <criterion/criterion.h>
 #include "string_ext.h"
 
-int cmpf(char **dest_str, char **expected_str)
+int compare_pointed_strings(char **dest_str, char **expected_str)
 {
     return (strcmp(*dest_str, *expected_str));
 }
@@ -22,7 +22,7 @@ void test_strsplit(char const *str, char const *delim, char const **expected)
         dest,
         (char **)expected,
         arrlen((const void **)dest),
-        cmpf
+        compare_pointed_strings
     );
     free(*dest);
     free(dest);
