@@ -30,8 +30,8 @@ void test_strsplit(char const *str, char const *delim, char const **expected)
 
 Test(strsplit, empty)
 {
-    test_strsplit("", "", (const char *[1]){""});
-    test_strsplit("", "abc", (const char *[1]){""});
+    test_strsplit("", "", (const char *[1]){NULL});
+    test_strsplit("", "abc", (const char *[1]){NULL});
     test_strsplit("t1", "", (const char *[1]){"t1"});
     test_strsplit("t1 t2", "", (const char *[1]){"t1 t2"});
 }
