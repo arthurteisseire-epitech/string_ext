@@ -13,7 +13,7 @@ char *strjoin(const char **array, const char *sep)
 {
     unsigned int i;
     size_t nb_str = arrlen((const void **)array);
-    size_t total_len = arrstrlen(array) + nb_str * strlen(sep);
+    size_t total_len = arrstrlen(array) + nb_str * strlen(sep) + 1;
     char *dest = calloc(total_len, sizeof(char));
 
     if (dest == NULL || nb_str == 0)
