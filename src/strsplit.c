@@ -29,15 +29,15 @@ char **strsplit(const char *str, const char *delim)
 {
     size_t nb_tokens = strcount(str, delim);
     char **dest = malloc(sizeof(char *) * (nb_tokens + 1));
-    char *str_dup;
+    char *tok_str;
 
     if (dest == NULL)
         return (NULL);
-    str_dup = strdup(str + strspn(str, delim));
-    if (str_dup == NULL)
+    tok_str = strdup(str + strspn(str, delim));
+    if (tok_str == NULL)
         return (NULL);
-    insert_tokens(dest, str_dup, delim);
+    insert_tokens(dest, tok_str, delim);
     if (no_tokens(dest))
-        free(str_dup);
+        free(tok_str);
     return (dest);
 }
