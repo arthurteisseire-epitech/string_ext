@@ -10,34 +10,47 @@
 #include <stdbool.h>
 #include "string_ext.h"
 
-static bool no_tokens(char **dest)
+static bool is_empty(char **tokens)
 {
-    return (dest[0] == NULL);
+    return (tokens[0] == NULL);
 }
 
-static void insert_tokens(char **dest, char *str_dup, const char *delim)
+static char **allocate_tokens_pointers(const char *str, const char *delim)
+{
+    size_t nb_tok = strcount(str, delim);
+    char **tokens = malloc(sizeof(char *) * (nb_tok + 1));
+
+    return (tokens);
+}
+
+static char **teardown_string(char **tokens, char *tok_str, const char *delim)
 {
     unsigned int i = 0;
     char *save_ptr;
 
-    dest[0] = strtok_r(str_dup, delim, &save_ptr);
-    while (dest[i] != NULL)
-        dest[++i] = strtok_r(NULL, delim, &save_ptr);
+    tokens[0] = strtok_r(tok_str, delim, &save_ptr);
+    while (tokens[i] != NULL)
+        tokens[++i] = strtok_r(NULL, delim, &save_ptr);
+    return (tokens);
+}
+
+static char **create_tokens(char **tokens, const char *str, const char *delim)
+{
+    char *tok_str = strdup(str + strspn(str, delim));
+
+    if (tok_str == NULL)
+        return (NULL);
+    tokens = teardown_string(tokens, tok_str, delim);
+    if (is_empty(tokens))
+        free(tok_str);
+    return (tokens);
 }
 
 char **strsplit(const char *str, const char *delim)
 {
-    size_t nb_tok = strcount(str, delim);
-    char **dest = malloc(sizeof(char *) * (nb_tok + 1));
-    char *tok_str;
+    char **tokens = allocate_tokens_pointers(str, delim);
 
-    if (dest == NULL)
-        return (NULL);
-    tok_str = strdup(str + strspn(str, delim));
-    if (tok_str == NULL)
-        return (NULL);
-    insert_tokens(dest, tok_str, delim);
-    if (no_tokens(dest))
-        free(tok_str);
-    return (dest);
+    if (tokens != NULL)
+        tokens = create_tokens(tokens, str, delim);
+    return (tokens);
 }
