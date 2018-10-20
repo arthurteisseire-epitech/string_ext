@@ -7,7 +7,6 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 #include "string_ext.h"
 
 static char **teardown_string_into_tokens(char **tokens, char *tok_str,
