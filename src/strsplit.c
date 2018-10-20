@@ -10,7 +10,8 @@
 #include <stdbool.h>
 #include "string_ext.h"
 
-static char **teardown_string(char **tokens, char *tok_str, const char *delim)
+static char **teardown_string_into_tokens(char **tokens, char *tok_str,
+                                          const char *delim)
 {
     unsigned int i = 0;
     char *save_ptr = tok_str;
@@ -27,7 +28,7 @@ static char **create_tokens(char **tokens, const char *str, const char *delim)
 
     if (tok_str == NULL)
         return (NULL);
-    tokens = teardown_string(tokens, tok_str, delim);
+    tokens = teardown_string_into_tokens(tokens, tok_str, delim);
     return (tokens);
 }
 
